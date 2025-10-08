@@ -28,7 +28,7 @@ int main() {
 
 #### ไดอะแกรม Single Task System
 
-```mermaid
+``` mermaid
 graph TD
     A[Start] --> B[Initialize System]
     B --> C[Read Sensors]
