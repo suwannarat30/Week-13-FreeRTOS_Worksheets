@@ -1,0 +1,24 @@
+# ไฟล์ระบบ
+.DS_Store
+Thumbs.db
+
+# Python / ESP32 / Arduino
+__pycache__/
+*.pyc
+*.log
+*.bin
+*.elf
+build/
+
+# Virtual environment
+.venv/
+venv/
+env/
+.env
+
+# VS Code / IDE
+.vscode/
+.idea/
+
+# Node.js (ถ้ามี)
+node_modules/
