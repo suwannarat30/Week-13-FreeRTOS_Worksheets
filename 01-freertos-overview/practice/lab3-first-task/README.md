@@ -407,12 +407,12 @@ ESP_LOGI(TAG, "Task state: %s", state_names[state]);
 
 ## Checklist การทำงาน
 
-- [ ] สร้าง Task พื้นฐานสำเร็จ
-- [ ] เข้าใจ Task parameters และ return values
-- [ ] ทดสอบ Task priorities
-- [ ] ใช้ Task management APIs (suspend/resume)
-- [ ] แสดง runtime statistics
-- [ ] ทำแบบฝึกหัดครบ
+- [/ ] สร้าง Task พื้นฐานสำเร็จ
+- [/ ] เข้าใจ Task parameters และ return values
+- [/ ] ทดสอบ Task priorities
+- [/ ] ใช้ Task management APIs (suspend/resume)
+- [/ ] แสดง runtime statistics
+- [/ ] ทำแบบฝึกหัดครบ
 
 ## คำถามทบทวน
 

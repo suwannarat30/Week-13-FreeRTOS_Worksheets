@@ -343,11 +343,11 @@ if (xSemaphoreTake(xBinarySemaphore, pdMS_TO_TICKS(3000)) == pdTRUE) {
 ## 📋 สรุปผลการทดลอง
 
 ### สิ่งที่เรียนรู้:
-- [ ] หลักการทำงานของ Binary Semaphore
-- [ ] การใช้ Semaphore สำหรับ Task Synchronization
-- [ ] การสื่สารระหว่าง ISR และ Task
-- [ ] การใช้ Timer interrupt กับ Semaphore
-- [ ] การจัดการ Button interrupt
+- [/ ] หลักการทำงานของ Binary Semaphore
+- [/ ] การใช้ Semaphore สำหรับ Task Synchronization
+- [/ ] การสื่สารระหว่าง ISR และ Task
+- [/ ] การใช้ Timer interrupt กับ Semaphore
+- [/ ] การจัดการ Button interrupt
 
 ### APIs ที่ใช้:
 - `xSemaphoreCreateBinary()` - สร้าง Binary Semaphore

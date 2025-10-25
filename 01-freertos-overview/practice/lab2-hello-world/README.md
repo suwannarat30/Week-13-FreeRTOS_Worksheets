@@ -300,12 +300,12 @@ idf.py monitor | tee output.log
 
 ## Checklist การทำงาน
 
-- [ ] Flash และ Monitor สำเร็จ
-- [ ] เห็น Log messages ต่างๆ
-- [ ] ทดสอบ Log levels ต่างๆ
-- [ ] ใช้ formatted logging ได้
-- [ ] ปรับ Log level ผ่าน menuconfig
-- [ ] ทำแบบฝึกหัดครบ
+- [ /] Flash และ Monitor สำเร็จ
+- [/ ] เห็น Log messages ต่างๆ
+- [ /] ทดสอบ Log levels ต่างๆ
+- [/ ] ใช้ formatted logging ได้
+- [/ ] ปรับ Log level ผ่าน menuconfig
+- [/ ] ทำแบบฝึกหัดครบ
 
 ## คำถามทบทวน
 
