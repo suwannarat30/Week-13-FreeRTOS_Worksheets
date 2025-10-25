@@ -124,3 +124,13 @@
 
 <img width="1756" height="932" alt="image" src="https://github.com/user-attachments/assets/ddb0372b-4f52-426e-94a8-e255d9d436fa" />
 
+## Lab08
+
+<img width="1919" height="1009" alt="image" src="https://github.com/user-attachments/assets/d61054c6-7e54-440d-8783-bedafce7130d" />
+
+<img width="1919" height="1013" alt="image" src="https://github.com/user-attachments/assets/49937d11-6d2e-492c-b73a-1211c2c86979" />
+
+<img width="1919" height="1010" alt="image" src="https://github.com/user-attachments/assets/a862b6a7-ca46-4121-acdd-9af3e2e622c9" />
+
+<img width="1889" height="989" alt="image" src="https://github.com/user-attachments/assets/52dd0391-7300-41ac-8b45-c2db6aadb6ba" />
+
