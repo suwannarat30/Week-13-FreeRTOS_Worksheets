@@ -366,10 +366,26 @@ xTaskCreatePinnedToCore(low_priority_task, "LowPrio", 3072, NULL, 1, NULL, 1);  
 ## คำถามสำหรับวิเคราะห์
 
 1. Priority ไหนทำงานมากที่สุด? เพราะอะไร?
+- จากผลการทดสอบพบว่า High Priority Task (Priority 5) ทำงานมากที่สุด
+เพราะ FreeRTOS ใช้ Preemptive Scheduling โดย task ที่มี priority สูงกว่าจะได้สิทธิ์ในการใช้ CPU ก่อน task อื่นๆ และสามารถ ขัดจังหวะ (preempt) task ที่ priority ต่ำกว่าได้ ทำให้ High Priority Task ถูกเรียกใช้งานบ่อยที่สุดเมื่อพร้อมทำงาน
+
 2. เกิด Priority Inversion หรือไม่? จะแก้ไขได้อย่างไร?
+- มีโอกาสเกิด Priority Inversion ในกรณีที่ Low Priority Task ครอบครอง shared resource อยู่ ในขณะที่ High Priority Task ต้องการใช้ resource เดียวกัน ทำให้ High Task ต้องรอ ทั้งๆ ที่มี priority สูงกว่า
+
+- แนวทางแก้ไข คือใช้กลไก Priority Inheritance ของ FreeRTOS โดยใช้ Mutex (xSemaphoreCreateMutex) แทน binary semaphore หรือ flag ธรรมดา เมื่อตรวจจับได้ว่า Low Task ครอบครอง resource อยู่ ระบบจะ ยก priority ของ Low Task ให้สูงขึ้นชั่วคราว เพื่อให้ทำงานเสร็จและคืน resource เร็วขึ้น
+
 3. Tasks ที่มี priority เดียวกันทำงานอย่างไร?
+- Tasks ที่มี priority เท่ากัน (เช่น Equal1, Equal2, Equal3) จะทำงานแบบ Round-Robin Scheduling
+นั่นคือ FreeRTOS จะจัดสรรเวลาการทำงานให้สลับกันในลำดับรอบๆ ไป เพื่อให้แต่ละ task ได้รับ CPU อย่างเท่าเทียม โดยเฉพาะถ้ามีการใช้ vTaskDelay() หรือ taskYIELD() จะยิ่งเห็นการสลับที่ชัดเจนขึ้น
+
 4. การเปลี่ยน Priority แบบ dynamic ส่งผลอย่างไร?
+- เมื่อมีการใช้ vTaskPrioritySet() เพื่อ เพิ่มหรือลด priority ระหว่างรันไทม์ จะส่งผลให้ Scheduler ปรับลำดับการทำงานทันที เช่น เมื่อ boost Low Priority Task จาก 1 → 4 จะเห็นว่า task นี้ได้ CPU บ่อยขึ้น และแซง Medium Task ได้ชั่วคราว เมื่อคืน priority กลับมา 1 Task นั้นจะถูก preempt อีกครั้งโดย tasks ที่มี priority สูงกว่า สิ่งนี้ช่วยให้สามารถ ควบคุมลำดับการทำงานแบบ adaptive ได้ตามสถานการณ์ เช่น การจัดลำดับงานเร่งด่วนแบบชั่วคราว
+
 5. CPU utilization ของแต่ละ priority เป็นอย่างไร?
+- High (5)	มากที่สุด	40–50%	ทำงานสั้นๆ แต่บ่อย
+- Medium (3)	ปานกลาง	25–35%	ถูก preempt บ่อย
+- Low (1)	น้อยที่สุด	15–25%	ทำงานเฉพาะเมื่อไม่มีงานอื่น
+- Equal (2)	ใกล้เคียงกัน	30–35% รวมกัน	สลับกันทำงานตามรอบเวลา
 
 ## ผลการทดลองที่คาดหวัง
 

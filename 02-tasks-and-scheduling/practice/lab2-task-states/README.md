@@ -470,10 +470,19 @@ void update_state_display(eTaskState current_state)
 ## คำถามสำหรับวิเคราะห์
 
 1. Task อยู่ใน Running state เมื่อไหร่บ้าง?
+- เมื่อ Scheduler เลือก task นั้นมาทำงานบน CPU (มี highest priority ที่ Ready) เช่น ตอน state_demo_task กำลัง loop คำนวณ
+
 2. ความแตกต่างระหว่าง Ready และ Blocked state คืออะไร?
+- Ready คือพร้อมทำงานแต่รอ CPU ส่วน Blocked คือรอ event เช่น semaphore หรือ delay
+
 3. การใช้ vTaskDelay() ทำให้ task อยู่ใน state ใด?
+- Task จะเข้าสู่ Blocked state เป็นเวลาที่ระบุใน delay
+
 4. การ Suspend task ต่างจาก Block อย่างไร?
+- Suspend ถูกสั่งหยุดด้วย API (vTaskSuspend()) และไม่กลับมาทำงานจนกว่าจะ Resume ขณะที่ Block จะกลับมาอัตโนมัติเมื่อ event/delay ครบ
+
 5. Task ที่ถูก Delete จะกลับมาได้หรือไม่?
+- ไม่ได้ Task ที่ถูกลบ (vTaskDelete()) จะหายไปจาก scheduler ต้องสร้างใหม่ด้วย xTaskCreate() เท่านั้น
 
 ## ผลการทดลองที่คาดหวัง
 
