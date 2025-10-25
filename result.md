@@ -1,4 +1,4 @@
-*** Lab 00
+## Lab 00
 
 <img width="1746" height="938" alt="image" src="https://github.com/user-attachments/assets/6ecacfab-1c78-42ae-b5c4-9e60488ac8f5" />
 
@@ -10,7 +10,7 @@
 
 <img width="1746" height="938" alt="image" src="https://github.com/user-attachments/assets/c7d5668b-cebf-482d-a239-dd06c8e1d80d" />
 
-*** Lab 01 
+ ## Lab 01 
 
 <img width="1744" height="938" alt="image" src="https://github.com/user-attachments/assets/c16d5f05-946e-4ac3-9d7e-fec08cbda7d8" />
 
@@ -27,7 +27,7 @@
 <img width="1752" height="934" alt="image" src="https://github.com/user-attachments/assets/bc7c639c-30f1-493e-8c1c-b3882c422aae" />
 
 
-*** Lab 02
+## Lab 02
 
 <img width="1749" height="935" alt="image" src="https://github.com/user-attachments/assets/d319054d-8066-4f69-82bd-b71a413e284f" />
 
@@ -46,7 +46,7 @@
 <img width="1754" height="934" alt="image" src="https://github.com/user-attachments/assets/1412a975-2c42-4db6-a801-0e8ab06ac3d3" />
 
 
-*** Lab 03
+## Lab 03
 
 <img width="1751" height="935" alt="image" src="https://github.com/user-attachments/assets/1ed93387-9567-406e-a071-87948ab8a820" />
 
@@ -61,7 +61,7 @@
 <img width="1755" height="933" alt="image" src="https://github.com/user-attachments/assets/0bc3a978-6f91-49f4-86c4-40e3182d32e9" />
 
 
-*** Lab 04
+## Lab 04
 
 <img width="1765" height="927" alt="image" src="https://github.com/user-attachments/assets/d7977eb7-088f-4875-80b7-f07171246b2b" />
 
@@ -82,7 +82,7 @@
 <img width="1758" height="930" alt="image" src="https://github.com/user-attachments/assets/76bd6992-1efe-481c-a840-0394f0d192fe" />
 
 
-*** Lab 05
+## Lab 05
 
 <img width="1753" height="934" alt="image" src="https://github.com/user-attachments/assets/ad8e5dda-a268-4e6a-a389-743fb264c401" />
 
@@ -97,7 +97,7 @@
 <img width="1748" height="936" alt="image" src="https://github.com/user-attachments/assets/46418628-8f35-4801-8247-21ee8afc0e53" />
 
 
-*** Lab 06
+## Lab 06
 
 <img width="1729" height="947" alt="image" src="https://github.com/user-attachments/assets/d1ab2602-91ba-4ea7-98a7-9c904981d519" />
 
@@ -110,7 +110,7 @@
 <img width="1770" height="924" alt="image" src="https://github.com/user-attachments/assets/c8670951-001b-4dee-8c66-8cecae2ba40b" />
 
 
-*** Lab 07
+## Lab 07
 
 <img width="1770" height="924" alt="image" src="https://github.com/user-attachments/assets/082c34ce-7edb-4dc6-8bc7-43337c5cfeb0" />
 
